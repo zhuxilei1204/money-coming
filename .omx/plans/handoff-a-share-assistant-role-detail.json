@@ -1,0 +1,33 @@
+{
+  "task_slug": "a-share-assistant-role-detail-plan",
+  "status": "consensus_approved",
+  "planning_artifacts": {
+    "prd": ".omx/plans/prd-a-share-assistant-role-detail.md",
+    "test_spec": ".omx/plans/test-spec-a-share-assistant-role-detail.md",
+    "input_spec": ".omx/specs/deep-interview-a-share-assistant.md",
+    "context_snapshot": ".omx/context/a-share-assistant-20260528T120757Z.md",
+    "interview": ".omx/interviews/a-share-assistant-20260528T122752Z.md"
+  },
+  "ralplan_architect_review": {
+    "path": ".omx/reviews/architect-a-share-assistant-role-detail-iter2.md",
+    "verdict": "APPROVE",
+    "order": 1
+  },
+  "ralplan_critic_review": {
+    "path": ".omx/reviews/critic-a-share-assistant-role-detail-iter2.md",
+    "verdict": "APPROVE",
+    "order": 2
+  },
+  "ralplan_consensus_gate": {
+    "complete": true,
+    "order": "architect_then_critic",
+    "iterations": 2
+  },
+  "handoff_clarification": "PROJECT.md creation and AGENTS.md update are execution-stage acceptance items, not current ralplan completion criteria. This supersedes the earlier deep-interview wording for this planning stage.",
+  "recommended_next": {
+    "default": "$ultragoal for durable tracking, then $team for parallel execution lanes",
+    "planning_discussion": "Continue discussing PRD sections if user wants more detail before execution",
+    "team": "$team .omx/plans/handoff-a-share-assistant-role-detail.json",
+    "ralph_fallback": "$ralph only if user explicitly wants single-owner persistent verification"
+  }
+}

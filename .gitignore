@@ -1,0 +1,28 @@
+# Python caches and build outputs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local environments and secrets
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Local or private market data
+data/raw/
+data/private/
+
+# OMX runtime state; keep planning artifacts under .omx/plans and .omx/specs
+.omx/logs/
+.omx/state/
+.omx/metrics.json
+.omx/tmux-hook.json
